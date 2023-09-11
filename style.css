@@ -1,0 +1,19 @@
+.squared{
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+};
+
+.info{
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: 0;
+};
+
+.info , .title{
+    background-color: rgba(5, 5, 5, 0.637);
+    color: rgb(255, 255, 255);
+};
+

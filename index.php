@@ -21,9 +21,24 @@
 <body>
     <div id="app">
 
-        <div class="container">
-            <div class="row row-cols-3">
-    
+        <div class="container text-center ">
+
+            <div class="row row-cols-3 justify-content-center">
+                <div class="col-3 m-2 p-0" v-for="cd in CdList" >
+                    
+                    <div :style="`background-image: url(${cd.poster})`" class="squared"></div>
+
+                    <div class="title my-2">
+                        <h4 > {{cd.title}} </h4>
+                        <h5 class="card-title "> {{cd.author}} </h5>
+                    </div>
+
+                    <div class="d-flex justify-content-center info">
+                        <p class="card-text ">{{cd.year}} - {{cd.genre}}</p>
+
+                    </div>
+
+                </div>
             </div>
         </div>
 
